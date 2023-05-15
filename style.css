@@ -1,0 +1,231 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+.menu-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 4.5rem;
+}
+.nav-title{
+    color: whitesmoke;
+    font-family: 'Great Vibes', cursive;
+    font-size: 48px;
+    padding-left: 15px;
+}
+.nav-button {
+    box-sizing: border-box;
+    background-color: rgb(188, 255, 233);
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    margin-right: 15px;
+    padding: 15px;
+    text-align: center;
+    text-transform: capitalize;
+    width: 200px;
+}
+.banner {
+    background: url('./img/banner.jpg') no-repeat center / cover;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    justify-content: center;
+}
+
+.banner-description {
+    color: whitesmoke;
+    font-family: 'Great Vibes', cursive;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-left: 15px;
+    text-transform: capitalize;
+}
+
+.banner-title {
+    font-size: 2rem;
+    margin-left: 15px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    width: 320px;
+}
+
+.banner-button {
+    box-sizing: border-box;
+    background-color: rgb(188, 255, 233);
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    margin-left: 15px;
+    margin-top: 15px;
+    padding: 15px;
+    text-align: center;
+    text-transform: capitalize;
+    width: 200px;
+}
+
+.servicos {
+    background-color: rgb(243, 241, 237);
+    height: 100vh;
+}
+
+.servicos-title,
+.servicos-subtitle {
+    color: #2e2e2e;
+    font-size: 2.5rem;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.servicos-subtitle {
+    font-size: 2.1rem;
+}
+
+.servicos-itens {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    padding-top: 40px;
+}
+
+.servicos-itens-details {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.servicos-itens-image {
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+}
+
+.servico-name {
+    font-weight: 600;
+    font-size: 1.25rem;
+    padding-top: 20px;
+}
+
+.essencia {
+    padding-top: 30px;
+}
+
+.essencia-flex {
+    display: flex;
+}
+
+.essencia-img {
+    height: 400px;
+    margin: 15px 30px;
+    width: 500px;
+}
+
+.essencia-textbox {
+    padding-left: 5em;
+}
+
+.textbox-title {
+    color: dimgrey;
+    font-size: 1.8rem;
+    padding-bottom: 20px;
+    text-transform: lowercase;
+}
+
+.textbox-subtitle {
+    color: #2e2e2e;
+    font-size: 2rem;
+    padding-bottom: 30px;
+}
+
+.textbox-quote {
+    font-style: italic;
+    border-left: 4px solid #ccc;
+    padding-left: 16px;
+    margin: 16px 0;
+}
+
+.textbox-descript {
+    font-size: 1.35rem;
+    line-height: 1.5rem;
+    padding-right: 30px;
+    padding-top: 40px;
+    text-align: justify;
+}
+
+.textbox-button {
+    box-sizing: border-box;
+    background-color: rgb(188, 255, 233);
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    margin-top: 15px;
+    padding: 15px;
+    text-align: center;
+    text-transform: capitalize;
+    width: 250px;
+}
+
+/* Estilos para tablets */
+
+@media only screen and (max-width: 768px) {
+    body {
+        width: 768px;
+    }
+
+    .essencia-img {
+        height: 250px;
+        margin: 15px 30px;
+        width: 300px;
+    }
+
+    .servicos,
+    .essencia {
+        height: fit-content;
+        padding-bottom: 40px;
+    }
+
+    .servicos-itens {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    .servicos-itens-details{
+        padding-top: 1.8rem;
+    }
+}
+
+/* Estilos para smartphones */
+
+@media only screen and (max-width: 480px) {
+    body {
+        width: 480px;
+    }
+
+    .banner-title {
+        font-size: 20px;
+    }
+
+    .banner-button {
+        font-size: 15px;
+        width: 150px;
+    }
+
+    .servicos,
+    .essencia {
+        height: fit-content;
+        padding-bottom: 40px;
+    }
+
+    .servicos-itens {
+        flex-direction: column;
+    }
+    .servicos-itens-image {
+        height: 100px;
+        width: 100px;
+    }
+
+    .essencia-img {
+        display: none;
+    }
+
+}
