@@ -109,7 +109,7 @@ body {
 .servico-description{
     color: #2e2e2e;
     font-size: .85rem;
-    padding-top: .75rem;
+    padding: 0 .75rem;
     text-align: justify;
     text-transform: lowercase;
     width: 15rem;
