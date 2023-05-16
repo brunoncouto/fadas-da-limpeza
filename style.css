@@ -216,6 +216,9 @@ body {
     .servicos-itens-details{
         padding-top: 1.8rem;
     }
+    .servicos-itens-details:last-child{
+        padding-bottom: 1rem;
+    }
 }
 
 /* Estilos para smartphones */
@@ -247,7 +250,10 @@ body {
         height: 10rem;
         width: 10rem;
     }
-
+    .servicos-itens-details:last-child{
+        padding-bottom: 1rem;
+    }
+    
     .essencia-img {
         display: none;
     }
