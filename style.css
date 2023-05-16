@@ -23,7 +23,7 @@ body {
     padding: 15px;
     text-align: center;
     text-transform: capitalize;
-    width: 200px;
+    width: 10rem;
 }
 .banner {
     background: url('./img/banner.jpg') no-repeat center / cover;
@@ -44,10 +44,10 @@ body {
 
 .banner-title {
     font-size: 2rem;
-    margin-left: 15px;
-    margin-top: 10px;
+    margin-left: 1rem;
+    margin-top: 1rem;
     text-transform: uppercase;
-    width: 320px;
+    width: 15rem;
 }
 
 .banner-button {
@@ -56,12 +56,12 @@ body {
     border-radius: 20px;
     cursor: pointer;
     font-size: 1.25rem;
-    margin-left: 15px;
-    margin-top: 15px;
-    padding: 15px;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    padding: .5rem;
     text-align: center;
     text-transform: capitalize;
-    width: 200px;
+    width: 12rem;
 }
 
 .servicos {
@@ -73,19 +73,19 @@ body {
 .servicos-subtitle {
     color: #2e2e2e;
     font-size: 2.5rem;
-    padding-top: 20px;
+    padding-top: 1.2rem;
     text-align: center;
 }
 
 .servicos-subtitle {
-    font-size: 2.1rem;
+    font-size: 2rem;
 }
 
 .servicos-itens {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-around;
-    padding-top: 40px;
+    padding-top: 2rem;
 }
 
 .servicos-itens-details {
@@ -95,8 +95,8 @@ body {
 }
 
 .servicos-itens-image {
-    height: 250px;
-    width: 250px;
+    height: 15rem;
+    width: 15rem;
     border-radius: 100%;
 }
 
@@ -104,6 +104,27 @@ body {
     font-weight: 600;
     font-size: 1.25rem;
     padding-top: 20px;
+}
+
+.servico-description{
+    color: #2e2e2e;
+    font-size: .85rem;
+    padding-top: .75rem;
+    text-align: justify;
+    text-transform: lowercase;
+    width: 15rem;
+}
+.servicos-button{
+    box-sizing: border-box;
+    background-color: rgb(188, 255, 233);
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    margin: 0 auto;
+    padding: 15px;
+    text-align: center;
+    text-transform: capitalize;
+    width: 10rem;
 }
 
 .essencia {
@@ -115,9 +136,9 @@ body {
 }
 
 .essencia-img {
-    height: 400px;
+    height: 25rem;
     margin: 15px 30px;
-    width: 500px;
+    width: 30rem;
 }
 
 .essencia-textbox {
@@ -162,9 +183,12 @@ body {
     padding: 15px;
     text-align: center;
     text-transform: capitalize;
-    width: 250px;
+    width: 10rem;
 }
-
+.servicos-button:hover, .textbox-button:hover, .banner-button:hover, .nav-button:hover{
+    background-color: #1E90FF;
+    color: white;
+}
 /* Estilos para tablets */
 
 @media only screen and (max-width: 768px) {
@@ -173,9 +197,9 @@ body {
     }
 
     .essencia-img {
-        height: 250px;
+        height: 15rem;
         margin: 15px 30px;
-        width: 300px;
+        width: 10rem;
     }
 
     .servicos,
@@ -205,9 +229,9 @@ body {
         font-size: 20px;
     }
 
-    .banner-button {
+    .servicos-button, .textbox-button, .banner-button, .nav-button{
         font-size: 15px;
-        width: 150px;
+        width: 8rem;
     }
 
     .servicos,
@@ -220,8 +244,8 @@ body {
         flex-direction: column;
     }
     .servicos-itens-image {
-        height: 100px;
-        width: 100px;
+        height: 10rem;
+        width: 10rem;
     }
 
     .essencia-img {
