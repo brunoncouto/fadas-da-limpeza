@@ -211,13 +211,11 @@ body {
     .servicos-itens {
         flex-direction: column;
         justify-content: space-around;
+        padding-bottom: 1rem;
     }
     
     .servicos-itens-details{
         padding-top: 1.8rem;
-    }
-    .servicos-itens-details:last-child{
-        padding-bottom: 1rem;
     }
 }
 
@@ -245,15 +243,13 @@ body {
 
     .servicos-itens {
         flex-direction: column;
+        padding-bottom: 1rem;
     }
     .servicos-itens-image {
         height: 10rem;
         width: 10rem;
     }
-    .servicos-itens-details:last-child{
-        padding-bottom: 1rem;
-    }
-    
+
     .essencia-img {
         display: none;
     }
