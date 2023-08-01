@@ -4,21 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fadas da Limpeza</title>
+    <title>Fadinhas da Limpeza</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:wght@100;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;600&family=Great+Vibes&family=Lato:wght@100;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <section class="banner">
         <nav class="menu-nav">
-            <h1 class="nav-title">Fadas da Limpeza</h1>
-            <p class="nav-button">Solicite um orçamento</p>
+            <h1 class="nav-title">Fadinhas da Limpeza</h1>
+            <!-- <p class="nav-button">Solicite um orçamento</p> -->
         </nav>
         <h2 class="banner-description">Limpeza profissional</h2>
-        <h1 class="banner-title">O melhor serviço de limpeza do Alentejo</h1>
-        <p class="banner-button">Solicite um orçamento</p>
+        <img src="img/294530798_564526232125792_4504230842956936869_n.png" alt="" class="banner-img">
+        <div class="banner-box">
+            <h1 class="banner-title">O melhor serviço de limpeza do Alentejo</h1>
+            <p class="banner-button">Solicite um orçamento</p>
+        </div>
     </section>
     <section class="servicos">
         <h2 class="servicos-title">Serviços Oferecidos</h2>
@@ -62,11 +65,18 @@
                 <img src="img/limpeza-alojamenot.jpg" alt="" class="servicos-itens-image">
                 <h3 class="servico-name">Limpeza de alojamentos</h3>
                 <p class="servico-description">
-                    Serviço completo de limpeza de alojamentos, incluindo dormitórios, áreas comuns e banheiros, abrange a limpeza de pisos, aspiração, remoção de poeira, higienização de superfícies, limpeza de camas, troca de lençóis e toalhas, esvaziamento de lixeiras e desinfecção de áreas.
+                    serviço completo de limpeza de alojamentos, incluindo dormitórios, áreas comuns e banheiros, abrange a limpeza de pisos, aspiração, remoção de poeira, higienização de superfícies, limpeza de camas, troca de lençóis e toalhas, esvaziamento de lixeiras e desinfecção de áreas.
                 </p>
             </div>
+            <div class="servicos-itens-details">
+                <img src="img/limpeza-condominio.png" alt="" class="servicos-itens-image">
+                <h3 class="servico-name">Limpeza de condomínios</h3>
+                <p class="servico-description">
+                    serviço profissional de limpeza de condomínios para manter o ambiente limpo, organizado e higienizado, 
+                    incluindo tarefas como limpeza de escadas, corrimão, elevadores e receção
+            </div>
         </div>
-        <p class="servicos-button">Solicite um orçamento</p>
+        <div class="button"><p class="servicos-button">Solicite um orçamento</p></div>
     </section>
     <section class="essencia">
         <div class="essencia-flex">
@@ -86,5 +96,76 @@
             </div>
         </div>
     </section>
+    <section class="contacto">
+        <h3 class="contacto-title">Entre em contato conosco!</h3>
+        <form id="textForm">
+            <label for="username">Nome:</label>
+            <input type="text" id="username" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <br>
+            <label for="message">Digite seu texto:</label>
+            <textarea id="message" required></textarea>
+            <br>
+            <button type="button" onclick="enviarTextoPorEmail()" class="contacto-button">Enviar</button>
+        </form>
+    
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script>
+            function enviarTextoPorEmail() {
+                const username = document.getElementById("username").value;
+                const email = document.getElementById("email").value;
+                const message = document.getElementById("message").value;
+    
+                const data = {
+                    username,
+                    email,
+                    message
+                };
+    
+                axios.post('/enviar_email', data)
+                    .then(response => {
+                        alert("Email enviado com sucesso!");
+                    })
+                    .catch(error => {
+                        alert("Ocorreu um erro ao enviar o email.");
+                        console.error(error);
+                    });
+            }
+        </script>
+    </section>
+    <footer class="rodape">
+        <h2 class="rodape-title">Fadinhas da Limpeza</h2>
+        <div class="rodape-info">
+            <ul class="rodape-lista">
+                <li class="rodape-info-item">
+                    <img src="img/whatsapp-icon.png" alt="Icone do whatsapp" class="rodape-item-img">
+                    <p class="rodape-item-text">+351 999 888 777</p>
+                </li>
+                <li class="rodape-info-item">
+                    <img src="img/instagram-icon.png" alt="Icone do instagram" class="rodape-item-img">
+                    <p class="rodape-item-text">@fadinhasdalimpeza</p>
+                </li>
+                <li class="rodape-info-item">
+                    <img src="img/email-icon.png" alt="Icone de email com um @" class="rodape-item-img">
+                    <p class="rodape-item-text">fadinhasdalimpeza.sines@gmail.com</p>
+                </li>
+                <li class="info-mobile"> 
+                    <img src="img/local-icon.png" alt="Icone de um alfinete de localização" class="rodape-item-img">
+                    <p class="rodape-item-text">R. Arlete Argente Guerreiro, nº 5. Sines, Setúbal - PT</p>
+                </li>
+                <li class="info-mobile">
+                    <p id="rodape-item-text">De segunda-feira ao sábado, a partir das 08h</p>
+                </li>
+            </ul>
+            <div class="rodape-local-info">
+                <p class="end">R. Arlete Argente Guerreiro, nº 5</p>
+                <p class="end">Sines, Setúbal - Portugal</p>
+                <p class="atendimento">De segunda-feira ao sábado</p>
+                <p class="horario">A partir das 08h da manhã</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
