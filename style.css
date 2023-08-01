@@ -1,6 +1,10 @@
 body {
     font-family: 'Lato', sans-serif;
 }
+a{
+    color: #2e2e2e;
+    text-decoration: none;
+}
 .menu-nav{
     display: flex;
     flex-direction: row;
@@ -257,6 +261,13 @@ body {
 }
 .info-mobile{
     display: none;
+}
+#whatsappButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    cursor: pointer;
 }
 /* Estilos para pequenos notebooks */
 @media only screen and (max-width: 1024px) {
