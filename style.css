@@ -385,6 +385,10 @@ a{
     .textbox-descript{
         padding-right: 0;
     }
+    #message{
+        height: 150px;
+        width: 300px;
+    }
     .rodape{
         height: 250px;
     }
