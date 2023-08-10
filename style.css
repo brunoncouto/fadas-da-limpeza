@@ -192,7 +192,7 @@ a{
     text-transform: capitalize;
     width: 10rem;
 }
-.servicos-button:hover, .textbox-button:hover, .banner-button:hover, .nav-button:hover{
+.servicos-button:hover, .textbox-button:hover, .banner-button:hover, .nav-button:hover, .contacto-button:hover{
     background-color: #1E90FF;
     color: white;
 }
