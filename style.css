@@ -314,7 +314,7 @@ a{
         width: 20rem;
     }
     .servicos,
-    .essencia {
+    .essencia, .contacto {
         height: fit-content;
         padding-bottom: 40px;
     }
@@ -354,7 +354,7 @@ a{
     }
 
     .servicos,
-    .essencia {
+    .essencia, .contacto{
         height: fit-content;
         padding-bottom: 40px;
     }
